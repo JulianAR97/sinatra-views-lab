@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <h1> Today </h1>
+    <p>
+        <! strftime will get specific values based on parameters. %A will give day of the week,>
+        <! %B will give full month name, %-d will give day number without a 0 in front%>
+        <! %C gives century as YY, %y gives year as yy>
+        <% today = Date.today.strftime('%A, %B %-d, %C%y') %>
+        <%= "The date is #{today}" %>
+    </p>
+</html>
